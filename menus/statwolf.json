@@ -4,6 +4,9 @@
     "submenu": [{
       "label": "Open configuration file",
       "command": "statwolf:openConfigurationFile"
+    }, {
+      "label": "Push full project",
+      "command": "statwolf:pushProject"
     }]
   }]
 }

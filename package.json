@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "etch": "^0.8.0",
+    "fs-plus": "^2.9.3",
     "node-ipc": "^8.9.2",
     "require-dir": "^0.3.1",
     "statwolf": "0.0.17"
