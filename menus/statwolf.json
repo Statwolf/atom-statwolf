@@ -1,0 +1,9 @@
+{
+  "menu": [{
+    "label": "Statwolf",
+    "submenu": [{
+      "label": "Open configuration file",
+      "command": "statwolf:openConfigurationFile"
+    }]
+  }]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "atom-statwolf",
+  "main": "./lib/statwolf",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "keywords": [],
+  "repository": "https://github.com/atom/statwolf",
+  "license": "MIT",
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "*": "consumeStatusBar"
+      }
+    }
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "etch": "^0.8.0",
+    "node-ipc": "^8.9.2",
+    "require-dir": "^0.3.1",
+    "statwolf": "0.0.17"
+  }
+}
