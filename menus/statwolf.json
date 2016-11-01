@@ -1,4 +1,10 @@
 {
+  "context-menu": {
+    ".tree-view.full-menu": [{
+      "label": "Push components in this location",
+      "command": "statwolf:pushLocation"
+    }]
+  },
   "menu": [{
     "label": "Statwolf",
     "submenu": [{
