@@ -1,6 +1,9 @@
 {
   "context-menu": {
     ".tree-view.full-menu": [{
+      "label": "Copy Statwolf path",
+      "command": "statwolf:copyPath"
+    }, {
       "label": "Push components in this location",
       "command": "statwolf:pushLocation"
     }]
@@ -13,6 +16,9 @@
     }, {
       "label": "Push full project",
       "command": "statwolf:pushProject"
+    }, {
+      "label": "Open path",
+      "command": "statwolf:openPath"
     }]
   }]
 }
