@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "description": "A short description of your package",
   "keywords": [],
-  "repository": "https://github.com/atom/statwolf",
+  "repository": "https://github.com/statwolf/atom-statwolf",
   "license": "MIT",
   "providedServices": {
     "autocomplete.provider": {
