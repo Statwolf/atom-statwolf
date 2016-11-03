@@ -6,6 +6,13 @@
   "keywords": [],
   "repository": "https://github.com/atom/statwolf",
   "license": "MIT",
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "provideStatwolfCompletion"
+      }
+    }
+  },
   "consumedServices": {
     "status-bar": {
       "versions": {
