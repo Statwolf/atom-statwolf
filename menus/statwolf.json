@@ -6,6 +6,10 @@
     }, {
       "label": "Push components in this location",
       "command": "statwolf:pushLocation"
+    }],
+    ".tab": [{
+      "label": "Copy Statwolf path",
+      "command": "statwolf:copyPath"
     }]
   },
   "menu": [{
