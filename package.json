@@ -24,9 +24,11 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
+    "atom-space-pen-views": "^2.2.0",
     "etch": "^0.8.0",
     "fs-plus": "^2.9.3",
     "handlebars": "^4.0.5",
+    "loophole": "^1.1.0",
     "node-ipc": "^8.9.2",
     "require-dir": "^0.3.1",
     "statwolf": "0.0.19"

@@ -6,6 +6,9 @@
     }, {
       "label": "Push components in this location",
       "command": "statwolf:pushLocation"
+    }, {
+      "label": "Add new Statwolf component",
+      "command": "statwolf:addNewComponent"
     }],
     ".tab": [{
       "label": "Copy Statwolf path",

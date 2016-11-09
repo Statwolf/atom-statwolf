@@ -1,0 +1,18 @@
+'use babel';
+
+/**
+ * N.W. This view uses atom-space-pen-views that should be deprecated.
+ * Right now does'not exist any implementation of the Selectlistview leveraging on the etch framework.
+ * In the future, maybe, we have to rewrite this module by using components.
+ **/
+
+import SelectListView from 'atom-space-pen-views';
+import EventEmitter from 'events';
+
+export default class extends SelectListView {
+
+  constructor() {
+    super();
+  }
+
+}
