@@ -29,7 +29,6 @@
     "fs-plus": "^2.9.3",
     "handlebars": "^4.0.5",
     "loophole": "^1.1.0",
-    "node-ipc": "^8.9.2",
     "npm": "^3.10.9",
     "require-dir": "^0.3.1"
   }
