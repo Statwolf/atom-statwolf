@@ -1,7 +1,9 @@
 {
+  "atom-workspace": {
+    "ctrl-alt-o": "statwolf:openPath"
+  },
   "atom-text-editor": {
     "ctrl-shift-j": "statwolf:execute",
-    "ctrl-shift-y": "statwolf:executeTabOut",
-    "ctrl-alt-o": "statwolf:openPath"
+    "ctrl-shift-y": "statwolf:executeTabOut"
   }
 }
