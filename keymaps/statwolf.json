@@ -4,6 +4,7 @@
   },
   "atom-text-editor": {
     "ctrl-shift-j": "statwolf:execute",
-    "ctrl-shift-y": "statwolf:executeTabOut"
+    "ctrl-shift-y": "statwolf:executeTabOut",
+    "ctrl-shift-w": "statwolf:executeInWorker"
   }
 }
