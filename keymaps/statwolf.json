@@ -1,6 +1,6 @@
 {
   "atom-workspace": {
-    "ctrl-alt-o": "statwolf:openPath"
+    "ctrl-alt-p": "statwolf:openPath"
   },
   "atom-text-editor": {
     "ctrl-shift-j": "statwolf:execute",

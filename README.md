@@ -41,4 +41,7 @@ ctrl + shift + y            : Execute current file getting tab-separated output
 ctrl + alt + y              : Execute test file getting tab-separated output
 ctrl + shift + w            : Execute current file in the worker
 ctrl + alt + w              : Execute test file in the worker
+
+From a form main file
+ctrl + alt + g              : Open the current form in a browser
 ```
