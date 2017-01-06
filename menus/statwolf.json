@@ -9,10 +9,16 @@
     }, {
       "label": "Add new Statwolf component",
       "command": "statwolf:addNewComponent"
+    }, {
+      "label": "Search component references",
+      "command": "statwolf:reverseSearch"
     }],
     ".tab": [{
       "label": "Copy Statwolf path",
       "command": "statwolf:copyPath"
+    }, {
+      "label": "Search component references",
+      "command": "statwolf:reverseSearch"
     }]
   },
   "menu": [{
