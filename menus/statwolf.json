@@ -19,6 +19,10 @@
     }, {
       "label": "Search component references",
       "command": "statwolf:reverseSearch"
+    }],
+    "atom-text-editor": [{
+      "label": "Copy Statwolf path at line",
+      "command": "statwolf:copyPathAtLine"
     }]
   },
   "menu": [{
