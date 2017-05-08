@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Terminal=false
+Exec=atom -a %u
+Name=APT‑URL
+Comment=APT‑URL handler
+Icon=
+Categories=Application;
+MimeType=x-scheme-handler/statwolf;
