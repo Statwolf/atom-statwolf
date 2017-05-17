@@ -1,8 +1,11 @@
 {
   "context-menu": {
-    ".tree-view.full-menu": [{
+    ".tree-view": [{
       "label": "Copy Statwolf path",
       "command": "statwolf:copyPath"
+    }, {
+      "label": "Copy Statwolf URI",
+      "command": "statwolf:copyURI"
     }, {
       "label": "Push components in this location",
       "command": "statwolf:pushLocation"
@@ -17,12 +20,15 @@
       "label": "Copy Statwolf path",
       "command": "statwolf:copyPath"
     }, {
+      "label": "Copy Statwolf URI",
+      "command": "statwolf:copyURI"
+    }, {
       "label": "Search component references",
       "command": "statwolf:reverseSearch"
     }],
     "atom-text-editor": [{
-      "label": "Copy Statwolf path at line",
-      "command": "statwolf:copyPathAtLine"
+      "label": "Copy Statwolf URI at line",
+      "command": "statwolf:copyURIAtLine"
     }]
   },
   "menu": [{
