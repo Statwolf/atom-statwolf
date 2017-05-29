@@ -1,13 +1,24 @@
 {
-  "atom-workspace": {
+  ".platform-linux atom-workspace, .platform-win32 atom-workspace": {
     "ctrl-alt-p": "statwolf:openPath"
   },
-  "atom-text-editor": {
+  ".platform-darwin atom-workspace": {
+    "cmd-alt-p": "statwolf:openPath"
+  },
+  ".platform-linux atom-text-editor, .platform-win32 atom-text-editor": {
     "ctrl-shift-j": "statwolf:execute",
     "ctrl-alt-j": "statwolf:executeTest",
     "ctrl-shift-y": "statwolf:executeTabOut",
     "ctrl-alt-y": "statwolf:executeTestTabOut",
     "ctrl-shift-w": "statwolf:executeInWorker",
     "ctrl-alt-w": "statwolf:executeTestInWorker"
+  },
+  ".platform-darwin atom-text-editor": {
+    "cmd-shift-j": "statwolf:execute",
+    "cmd-alt-j": "statwolf:executeTest",
+    "cmd-shift-y": "statwolf:executeTabOut",
+    "cmd-alt-y": "statwolf:executeTestTabOut",
+    "cmd-shift-w": "statwolf:executeInWorker",
+    "cmd-alt-w": "statwolf:executeTestInWorker"
   }
 }
