@@ -5,4 +5,41 @@
 @import "ui-variables";
 
 .statwolf {
+
+  &.dbg-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+    &.row {
+      flex-direction: row;
+    }
+    
+    &.column {
+      flex-direction: column;
+    }
+  }
+
+  &.dbg-editor-wrapper {
+    background-color: @base-background-color
+  }
+
+  &.dbg-item {
+    &.bigger {
+      flex: 4;
+    }
+
+    &.big {
+      flex: 3;
+    }
+
+    &.small {
+      flex: 2;
+    }
+
+    &.smaller {
+      flex: 1;
+    }
+  } 
+
 }

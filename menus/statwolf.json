@@ -34,14 +34,21 @@
   "menu": [{
     "label": "Statwolf",
     "submenu": [{
-      "label": "Open configuration file",
-      "command": "statwolf:openConfigurationFile"
+      "label": "Open path",
+      "command": "statwolf:openPath"
+    }, {
+      "type": "separator"
     }, {
       "label": "Push full project",
       "command": "statwolf:pushProject"
     }, {
-      "label": "Open path",
-      "command": "statwolf:openPath"
+      "label": "Debugger",
+      "command": "statwolf:debugger"
+    }, {
+      "type": "separator"
+    }, {
+      "label": "Open configuration file",
+      "command": "statwolf:openConfigurationFile"
     }]
   }]
 }
