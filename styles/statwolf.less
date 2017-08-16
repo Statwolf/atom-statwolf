@@ -25,6 +25,8 @@
   }
 
   &.dbg-item {
+    overflow: scroll;
+
     &.bigger {
       flex: 4;
     }
@@ -41,5 +43,20 @@
       flex: 1;
     }
   } 
+
+  &.icon {
+    margin-left: 5px;
+  }
+
+  &.link {
+    cursor: pointer; 
+    user-select: none;
+    list-style-type: none;
+
+    &.selected {
+      background-color: @background-color-selected;
+      color: @text-color-selected
+    }
+  }
 
 }
