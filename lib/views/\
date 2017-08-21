@@ -1,0 +1,32 @@
+'use babel';
+
+/** @jsx etch.dom */
+
+import etch from 'etch';
+import dataStore from '../utils/data-store';
+
+const store = dataStore('dbg-console');
+
+export default class {
+
+  constructor() {
+    
+    etch.initialize(this);
+  }
+
+  render() {
+    const markers = this.lines.map(function() {
+
+    });
+  }
+
+  update() {
+    etch.update(this);
+  }
+
+  async destroy() {
+    await etch.destroy(this);
+  }
+
+}
+

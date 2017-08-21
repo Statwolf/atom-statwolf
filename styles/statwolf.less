@@ -4,7 +4,48 @@
 // for a full listing of what's available.
 @import "ui-variables";
 
+List.statwolf {
+  margin-left: 10px;
+}
+
+div[gutter-name="console"] {
+  width: 25px;
+}
+
 .statwolf {
+
+  &.editor {
+    height: 100%;
+
+    &.console {
+      margin-top: 10px;
+      height: calc(100% - 10px);
+    }
+  }
+
+  &.toolbar {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+
+    & > span {
+      cursor: pointer;
+      margin-left: 7px;
+      margin-right: 7px;
+      color: @text-color-selected; 
+
+      &.disabled {
+        cursor: not-allowed;
+        color: @text-color;
+      }
+    }
+  }
+
+  &.engine-list {
+    padding-left: 0px;
+  }
 
   &.dbg-wrapper {
     width: 100%;
@@ -21,11 +62,15 @@
   }
 
   &.dbg-editor-wrapper {
-    background-color: @base-background-color
+    background-color: @base-background-color;
   }
 
   &.dbg-item {
-    overflow: scroll;
+    overflow: hidden;
+
+    &.biggest {
+    flex: 20;
+    }
 
     &.bigger {
       flex: 4;
@@ -55,7 +100,12 @@
 
     &.selected {
       background-color: @background-color-selected;
-      color: @text-color-selected
+      color: @text-color-selected;
+
+      & > ul {
+        background-color: @app-background-color;
+        color: @text-color;
+      }
     }
   }
 
