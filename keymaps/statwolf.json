@@ -1,9 +1,17 @@
 {
+  ".statwolf.dbg-wrapper": {
+    "f8": "statwolf:debugger-continue",
+    "f10": "statwolf:debugger-next",
+    "f11": "statwolf:debugger-in",
+    "f12": "statwolf:debugger-out"
+  },
   ".platform-linux atom-workspace, .platform-win32 atom-workspace": {
-    "ctrl-alt-p": "statwolf:openPath"
+    "ctrl-alt-p": "statwolf:openPath",
+    "ctrl-alt-shift-d": "statwolf:debugger"
   },
   ".platform-darwin atom-workspace": {
-    "cmd-alt-p": "statwolf:openPath"
+    "cmd-alt-p": "statwolf:openPath",
+    "cmd-alt-shift-d": "statwolf:debugger"
   },
   ".platform-linux atom-text-editor, .platform-win32 atom-text-editor": {
     "ctrl-shift-j": "statwolf:execute",
