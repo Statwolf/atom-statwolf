@@ -31,7 +31,7 @@
     "loophole": "^1.1.0",
     "require-dir": "^0.3.1",
     "safe-win-path": "0.0.1",
-    "statwolf": "0.0.6",
-    "statwolf-debugger-client": "0.0.6"
+    "statwolf": "0.0.8",
+    "statwolf-debugger-client": "0.0.8"
   }
 }
