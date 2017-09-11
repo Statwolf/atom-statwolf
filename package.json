@@ -1,7 +1,7 @@
 {
   "name": "atom-statwolf",
   "main": "./lib/statwolf",
-  "version": "0.0.41",
+  "version": "0.0.42",
   "description": "A short description of your package",
   "keywords": [],
   "repository": "https://github.com/statwolf/atom-statwolf",
