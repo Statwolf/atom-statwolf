@@ -42,9 +42,6 @@
       "label": "Push full project",
       "command": "statwolf:pushProject"
     }, {
-      "label": "Debugger",
-      "command": "statwolf:debugger"
-    }, {
       "type": "separator"
     }, {
       "label": "Open configuration file",
