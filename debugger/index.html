@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../node_modules/electron-tabs/electron-tabs.css">
+  </head>
+  <body style="margin: 0px">
+    <div class="etabs-tabgroup">
+      <div class="etabs-tabs"></div>
+      <div class="etabs-buttons"></div>
+    </div>
+    <div class="etabs-views"></div>
+    <script>
+(function(global) {
+  const d = require('./debugger.js');
+
+  d();
+})(this);
+    </script>
+  </body>
+</html>

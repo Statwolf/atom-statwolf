@@ -25,12 +25,15 @@
   },
   "dependencies": {
     "atom-space-pen-views": "^2.2.0",
+    "electron-tabs": "^0.9.0",
     "etch": "^0.8.0",
+    "font-awesome": "^4.7.0",
     "fs-plus": "^2.9.3",
     "handlebars": "^4.0.5",
     "loophole": "^1.1.0",
     "require-dir": "^0.3.1",
     "safe-win-path": "0.0.1",
-    "statwolf": "0.0.16"
+    "statwolf": "0.0.16",
+    "ws": "^3.3.2"
   }
 }
