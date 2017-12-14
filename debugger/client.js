@@ -3,9 +3,10 @@ const ws = require('ws');
 
 const _emitter = new EventEmitter();
 
-const connect = function(data) {
-  const host = data.env.host.replace(/^https?:\/\//, '');
+const data = JSON.parse(localStorage.getItem('env'));
+const host = _emitter.host = data.env.host.replace(/^https?:\/\//, '');
 
+const connect = function() {
   const _client = new ws(`ws://${ host }:9999`);
   _client.on('open', function() {
     _client.send(JSON.stringify({ type: 'join', room: 'debug' }));
@@ -28,6 +29,12 @@ const connect = function(data) {
       });
     });
 
+    _client.on('close', function() {
+      _emitter.emit('close', {
+        host
+      });
+    });
+
     _emitter.emit('open', {
       host
     });
@@ -35,6 +42,6 @@ const connect = function(data) {
 
 };
 
-connect(JSON.parse(localStorage.getItem('env')));
+connect();
 
 module.exports = _emitter;

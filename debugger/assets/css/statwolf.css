@@ -1,0 +1,21 @@
+.status {
+  font-family: 'Source Sans Pro', sans-serif;
+  /*text-align: right;*/
+  margin: 5px;
+  color: white;
+}
+
+.status-ok {
+  color: #90ee90;
+}
+
+.status-ko {
+  color: red;
+}
+
+body {
+  background-color: rgb(0, 138, 132);
+  background-image: url('../img/backgroundlogo.png');
+  background-repeat: no-repeat;
+  background-position: right;
+}
