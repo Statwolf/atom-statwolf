@@ -6,14 +6,16 @@
     <link rel="stylesheet" href="./assets/css/statwolf.css">
   </head>
   <body style="margin: 0px">
-    <div class="status">
-      <span class="host"></span>
-    </div>
-    <div class="etabs-tabgroup">
-      <div class="etabs-tabs"></div>
-      <div class="etabs-buttons"></div>
-    </div>
-    <div class="etabs-views"></div>
+	<div class="view-wrapper">
+		<div class="status">
+		  <span class="host"></span>
+		</div>
+		<div class="etabs-tabgroup">
+		  <div class="etabs-tabs"></div>
+		  <div class="etabs-buttons"></div>
+		</div>
+		<div class="etabs-views"></div>
+	</div>
     <script>
 (function(global) {
   const d = require('./debugger.js');
@@ -22,7 +24,7 @@
 
   const statusField = document.querySelector('span.host');
   const draw = function(info) {
-  statusField.innerHTML = `<i class="fa fa-circle status-${ info.color }"></i> ${ info.host }`;
+  statusField.innerHTML = `<i style="margin-right: 4px; position: relative; top: 1px;" class="fa fa-circle status-${ info.color }"></i> ${ info.host }`;
   };
   console.log('Registering open event on GUI');
   handle.on('open', function(info) {

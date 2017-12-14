@@ -1,8 +1,13 @@
 .status {
   font-family: 'Source Sans Pro', sans-serif;
   /*text-align: right;*/
-  margin: 5px;
   color: white;
+  position: absolute;
+  background-color: #374856;
+  right: 0px;
+  padding: 6px;
+  border-top: 1px solid #374856;
+  border-left: 1px solid #666;
 }
 
 .status-ok {
@@ -13,9 +18,18 @@
   color: red;
 }
 
-body {
-  background-color: rgb(0, 138, 132);
-  background-image: url('../img/backgroundlogo.png');
+.view-wrapper {
+  overflow-y: hidden;
+  background-color: #374856;
+  background-image: url('../img/logo.svg');
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: center center;
+}
+
+.etabs-tabgroup {
+	background-color: #aaa;
+}
+
+span.host {
+	text-align: baseline;
 }
