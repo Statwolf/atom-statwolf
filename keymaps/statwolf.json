@@ -1,9 +1,11 @@
 {
   ".platform-linux atom-workspace, .platform-win32 atom-workspace": {
-    "ctrl-alt-p": "statwolf:openPath"
+    "ctrl-alt-p": "statwolf:openPath",
+    "ctrl-alt-d": "statwolf:debugger"
   },
   ".platform-darwin atom-workspace": {
-    "cmd-alt-p": "statwolf:openPath"
+    "cmd-alt-p": "statwolf:openPath",
+    "cmd-alt-d": "statwolf:debugger"
   },
   ".platform-linux atom-text-editor, .platform-win32 atom-text-editor": {
     "ctrl-shift-j": "statwolf:execute",

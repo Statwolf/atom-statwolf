@@ -1,13 +1,20 @@
 const EventEmitter = require('events');
 const ws = require('ws');
+const electron = require('electron');
 
 const _emitter = new EventEmitter();
 
-const data = JSON.parse(localStorage.getItem('env'));
-const host = _emitter.host = data.env.host.replace(/^https?:\/\//, '');
+let _client = null;
 
-const connect = function() {
-  const _client = new ws(`ws://${ host }:9999`);
+const connect = function(data) {
+  if(_client !== null) {
+    _client.close();
+  }
+
+  const host = _emitter.host = data.env.host.replace(/^https?:\/\//, '');
+
+  _client = new ws(`ws://${ host }:9999`);
+
   _client.on('open', function() {
     _client.send(JSON.stringify({ type: 'join', room: 'debug' }));
 
@@ -42,6 +49,9 @@ const connect = function() {
 
 };
 
-connect();
+const ipc = electron.ipcRenderer;
+ipc.on('config', function(sender, data) {
+  connect(data);
+});
 
 module.exports = _emitter;

@@ -3,11 +3,10 @@
   /*text-align: right;*/
   color: white;
   position: absolute;
-  background-color: #374856;
+  background-color: #283542;
   right: 0px;
   padding: 6px;
-  border-top: 1px solid #374856;
-  border-left: 1px solid #666;
+  border-top: 1px solid #283542;
 }
 
 .status-ok {
@@ -26,8 +25,13 @@
   background-position: center center;
 }
 
+.etabs-views {
+	border: none;
+}
+
 .etabs-tabgroup {
-	background-color: #aaa;
+	border-top: 1px solid #283542;	
+	background-color: #283542;
 }
 
 span.host {
