@@ -5,22 +5,31 @@ const electron = require('electron');
 const _emitter = new EventEmitter();
 
 let _client = null;
+let retryId = null;
 
 const connect = function(data) {
+  if(retryId !== null) {
+    clearTimeout(retryId);
+  }
+
   if(_client !== null) {
     _client.close();
   }
 
   const host = _emitter.host = data.env.host.replace(/^https?:\/\//, '');
 
-  _client = new ws(`ws://${ host }:9999`);
+  _emitter.emit('connecting', {
+    host
+  });
 
-  _client.on('open', function() {
-    _client.send(JSON.stringify({ type: 'join', room: 'debug' }));
+  const currentClient = _client = new ws(`ws://${ host }:9999`);
+
+  currentClient.on('open', function() {
+    currentClient.send(JSON.stringify({ type: 'join', room: 'debug' }));
 
     console.log('Connected!');
 
-    _client.on('message', function(msg) {
+    currentClient.on('message', function(msg) {
       if(msg == null) {
         return;
       }
@@ -36,10 +45,15 @@ const connect = function(data) {
       });
     });
 
-    _client.on('close', function() {
+    currentClient.on('close', function() {
+      console.log('Message broker connection closed... Waiting for new connection');
       _emitter.emit('close', {
         host
       });
+
+      retryId = setTimeout(function() {
+        connect(data);
+      }, 500);
     });
 
     _emitter.emit('open', {
@@ -47,6 +61,12 @@ const connect = function(data) {
     });
   });
 
+  _client.on('error', function() {
+    console.log('Unable to connect to message broker... Retrying');
+    retryId = setTimeout(function() {
+      connect(data);
+    }, 500);
+  });
 };
 
 const ipc = electron.ipcRenderer;

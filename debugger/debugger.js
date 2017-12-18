@@ -16,7 +16,7 @@ module.exports = function() {
     });
   });
 
-  ['open', 'close'].forEach(function(evt) {
+  ['open', 'close', 'connecting'].forEach(function(evt) {
     console.log(`Registering event ${ evt }`);
     client.on(evt, function(info) {
       console.log(`Proxying event ${ evt }`);

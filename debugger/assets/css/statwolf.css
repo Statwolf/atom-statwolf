@@ -17,6 +17,10 @@
   color: red;
 }
 
+.status-connecting {
+  color: orange;
+}
+
 .view-wrapper {
   overflow-y: hidden;
   background-color: #374856;

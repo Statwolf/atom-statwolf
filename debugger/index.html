@@ -19,6 +19,20 @@
     <script>
 (function(global) {
   const d = require('./debugger.js');
+  const electron = require('electron');
+
+  global.addEventListener('beforeunload', function() {
+    const currentWindow = electron.remote.getCurrentWindow();
+    const size = currentWindow.getSize();
+
+    localStorage.setItem('dbgStatus', JSON.stringify({
+      isMaximized: currentWindow.isMaximized(),
+      geometry: {
+        width: size[0],
+        height: size[1]
+      }
+    }));
+  });
 
   const handle = d();
 
@@ -33,10 +47,16 @@
       host: info.host,
     });
   });
+  handle.on('connecting', function(info) {
+    draw({
+      color: 'connecting',
+      host: info.host
+    });
+  });
   handle.on('close', function(info) {
     draw({
       color: 'ko',
-      host: info.host,
+      host: info.host
     });
   });
 
