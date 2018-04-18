@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "atom-space-pen-views": "^2.2.0",
+    "circular-json": "^0.5.3",
     "electron-tabs": "^0.9.0",
     "etch": "^0.8.0",
     "font-awesome": "^4.7.0",
